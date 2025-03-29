@@ -1,0 +1,84 @@
+/* 전체 배경 체크무늬 + 폰트 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e0f7fa;
+  background-image: linear-gradient(45deg, #b3e5fc 25%, transparent 25%),
+                    linear-gradient(-45deg, #b3e5fc 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #b3e5fc 75%),
+                    linear-gradient(-45deg, transparent 75%, #b3e5fc 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
+
+/* 콘텐츠 중앙 정렬 */
+.container {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* 제목 스타일 */
+.container h1 {
+  color: #0077b6;
+  margin-bottom: 30px;
+}
+
+/* 파일 업로드 폼 스타일 */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+/* 파일 입력 필드 */
+input[type="file"] {
+  padding: 10px;
+  border: 2px solid #90caf9;
+  border-radius: 8px;
+  background-color: #f1faff;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* 버튼 공통 스타일 */
+button {
+  padding: 12px 20px;
+  background-color: #4fc3f7;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0288d1;
+}
+
+/* 상태 메시지 */
+#status-message {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #00796b;
+}
+
+/* 다운로드 버튼 영역 */
+#download-section {
+  margin-top: 20px;
+}
+
+#download-link button {
+  background-color: #81d4fa;
+}
+
+#download-link button:hover {
+  background-color: #039be5;
+}
